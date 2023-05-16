@@ -30,7 +30,5 @@ public class Cracha {
                 System.out.println("Código de acesso inválido");
             }
         }
-
-
     }
 

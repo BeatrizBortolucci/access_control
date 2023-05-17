@@ -41,7 +41,7 @@ jobs:
       name: Build & push Docker image 
       with: 
         image: beatrizbortolucci/access_control
-        tags: ${{ steps.increment_version.outputs.version }} 
+        tags: latest, ${{ steps.increment_version.outputs.version }} 
         registry: docker.io 
         dockerfile: dockerfile 
         username: ${{ secrets.DOCKER_USERNAME }} 

@@ -25,10 +25,6 @@ jobs:
     - name: Compilar Classe com o Java
       run: javac -cp src src/Testes.java
       
-    - name: Compilando o Java
-      run: |
-            cd src
-            javac -cp . Testes
     - name: Executando o Java
       run: |
             cd src

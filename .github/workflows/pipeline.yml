@@ -25,10 +25,14 @@ jobs:
     - name: Compilar Classe com o Java
       run: javac -cp src src/Testes.java
       
-    - name: Compilando o Javas
+    - name: Compilando o Java
       run: |
             cd src
-            java Testes
+            javac -cp . Testes
+    - name: Executando o Java
+      run: |
+            cd src
+            java -cp . Testes
     - name: Obtendo a versão atual 
       id: get_version 
       run: echo ::set-output name=version::$(cat version.txt) 
